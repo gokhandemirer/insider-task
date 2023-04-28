@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Score extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'home_score',
+        'away_score',
+        'match_id',
+    ];
 }

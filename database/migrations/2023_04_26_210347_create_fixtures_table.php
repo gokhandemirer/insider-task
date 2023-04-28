@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('fixtures', function (Blueprint $table) {
             $table->id();
-            $table->integer('match_id');
             $table->integer('week');
             $table->timestamps();
         });

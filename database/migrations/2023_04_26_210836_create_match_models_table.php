@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('home');
             $table->integer('away');
+            $table->integer('fixture_id');
             $table->timestamps();
         });
     }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Fixture extends Model
 {
     use HasFactory;
+
+    public function matches()
+    {
+        return $this->hasMany(MatchModel::class);
+    }
 }

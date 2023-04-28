@@ -1,5 +1,5 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
+import { Head, useForm } from '@inertiajs/vue3';
 import TeamList from "@/Components/TeamList.vue";
 
 defineProps({
@@ -9,8 +9,10 @@ defineProps({
     }
 });
 
+const form = useForm({});
+
 const createFixtures = () => {
-    // do something
+    form.post(route('fixture.create'));
 }
 </script>
 
